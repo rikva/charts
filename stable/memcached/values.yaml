@@ -24,6 +24,7 @@ memcached:
   ## ref: https://github.com/memcached/memcached/wiki/ConfiguringServer#commandline-arguments
   ##
   maxItemMemory: 64
+  defaultSlabPageSize: 1M
   verbosity: v
   extendedOptions: modern
 

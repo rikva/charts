@@ -40,12 +40,13 @@ The command removes all the Kubernetes components associated with the chart and 
 
 The following tables lists the configurable parameters of the Memcached chart and their default values.
 
-|      Parameter            |          Description            |                         Default                         |
-|---------------------------|---------------------------------|---------------------------------------------------------|
-| `image`                   | The image to pull and run       | A recent official memcached tag                         |
-| `imagePullPolicy`         | Image pull policy               | `Always` if `imageTag` is `latest`, else `IfNotPresent` |
-| `memcached.verbosity`     | Verbosity level (v, vv, or vvv) | Un-set.                                                 |
-| `memcached.maxItemMemory` | Max memory for items (in MB)    | `64`                                                    |
+|            Parameter            |          Description            |                         Default                         |
+|---------------------------------|---------------------------------|---------------------------------------------------------|
+| `image`                         | The image to pull and run       | A recent official memcached tag                         |
+| `imagePullPolicy`               | Image pull policy               | `Always` if `imageTag` is `latest`, else `IfNotPresent` |
+| `memcached.verbosity`           | Verbosity level (v, vv, or vvv) | Un-set.                                                 |
+| `memcached.maxItemMemory`       | Max memory for items (in MB)    | `64`                                                    |
+| `memcached.defaultSlabPageSize` | Default slab page size          | `1M`                                                    |
 
 The above parameters map to `memcached` params. For more information please refer to the [Memcached documentation](https://github.com/memcached/memcached/wiki/ConfiguringServer).
 
